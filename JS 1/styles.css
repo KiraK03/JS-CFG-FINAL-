@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap");
+
+body {
+  font-family: "Mina", sans-serif;
+  background-image: url(https://img.freepik.com/free-vector/digital-sci-fi-cyber-grid-lines-geometric-wallpaper-design_1017-53609.jpg?w=1060&t=st=1721663569~exp=1721664169~hmac=e14e9f1fe0dcf25af59342f4428e6f7ce8567c26f11e098605921b9f0b20a664);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 20px;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  padding: 20px 40px;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pixel-button {
+  color: white;
+  background-color: #0c0269;
+  border: 5px solid #0c0132;
+  box-shadow: 0 0 0 5px #0b0136, 0 0 0 10px #04013e;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pixel-button:hover {
+  background-color: #0099ff;
+  box-shadow: 0 0 0 5px #00d9ff, 0 0 0 10px #035976;
+}
+
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  padding: 20px 50px;
+  color: black;
+  background: whitesmoke;
+  border-radius: 25px;
+
+  box-shadow: /* Smaller blur for tight glow */ 0 0 5px #0b0136,
+    /* Adding vibrant pink for medium glow */ 0 0 10px #ff00ff,
+    /* Deep blue for larger glow */ 0 0 20px #1b03a3,
+    /* Bright cyan for intense outer glow */ 0 0 40px #04d9ff,
+    /* Bright cyan for maximum glow */ 0 0 80px #04d9ff;
+
+  border: solid 1px #ff00ff; /* Vibrant pink border to match the neon effect */
+
+  font-size: 24px;
+  text-align: center;
+}
+
+.quiz-container {
+  display: none;
+  align-items: center;
+  margin: 20px;
+}
+
+.question {
+  font-size: 36px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice {
+  font-family: "Mina", sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #0c0269;
+  color: white;
+  border: 2px solid #0c0132;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice:hover {
+  background-color: #0099ff;
+}
+
+.timer {
+  color: #0F0; /* Bright green, common in retro digital displays */
+  background: linear-gradient(135deg, #000000, #003300); /* A dark background with a slight gradient */
+  font-family: 'Digital-7', monospace; /* A digital-looking font; ensure you have this font or a similar one loaded */
+  font-size: 18px; /* Larger font size for readability */
+  padding: 10px;
+  border: 3px solid #0F0; /* Bright green border */
+  box-shadow: 0 0 15px #0F0, inset 0 0 10px #030; /* Glowing effect */
+  text-shadow: 0 0 5px #0F0, 0 0 10px #0F0; /* Text glow for depth */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  position: fixed; /* Keep it at a fixed position */
+  top: 0;
+  right: 0;
+  margin: 10px; /* Adjust as needed */
+}
